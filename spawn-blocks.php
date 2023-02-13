@@ -35,10 +35,10 @@ add_action('init', 'create_block_spawn_blocks_block_init');
 function spawn_blocks_enqueue_misc_scripts()
 {
 	$asset = include(__DIR__ . '/build/misc/misc.asset.php');
-	wp_enqueue_script('spawn-script', plugin_dir_url(__FILE__) . '/build/misc/misc.js', $asset['dependencies'], $asset['version']);
+	wp_enqueue_script('spawn-script', plugin_dir_url(__FILE__) . 'build/misc/misc.js', $asset['dependencies'], $asset['version']);
 }
 
-add_action('wp_enqueue_scripts', 'spawn_blocks_enqueue_misc_scripts');
+// add_action('wp_enqueue_scripts', 'spawn_blocks_enqueue_misc_scripts');
 add_action('enqueue_block_editor_assets', 'spawn_blocks_enqueue_misc_scripts');
 
 /**
