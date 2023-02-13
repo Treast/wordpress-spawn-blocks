@@ -55,4 +55,5 @@ function spawn_blocks_add_block_category($categories)
 
 	return $categories;
 }
+
 add_filter('block_categories_all', 'spawn_blocks_add_block_category');
