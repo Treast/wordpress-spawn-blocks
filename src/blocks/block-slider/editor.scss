@@ -1,0 +1,17 @@
+.wp-block-spawn-slider {
+	padding: 30px 30px 15px;
+	border: 1px solid #000;
+
+	> .block-editor-inner-blocks {
+		overflow-x: auto;
+
+		& > .block-editor-block-list__layout {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			gap: 20px;
+			width: max-content;
+			padding-bottom: 15px;
+		}
+	}
+}

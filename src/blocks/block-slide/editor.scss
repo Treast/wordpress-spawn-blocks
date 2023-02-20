@@ -1,0 +1,11 @@
+.wp-block-spawn-slide {
+	border: 1px dashed rgba(#000, 0.7);
+	padding: 20px;
+
+	> .block-editor-inner-blocks
+		> .block-editor-block-list__layout
+		> *:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}

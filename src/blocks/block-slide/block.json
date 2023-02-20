@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "spawn/slide",
+	"version": "0.1.0",
+	"title": "Slide",
+	"category": "spawn",
+	"description": "Slide block",
+	"parent": ["spawn/slider"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "spawn-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

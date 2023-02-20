@@ -24,7 +24,8 @@
  */
 function create_block_spawn_blocks_block_init()
 {
-	// register_block_type(__DIR__ . '/build/blocks/block-1');
+	register_block_type(__DIR__ . '/build/blocks/block-slider');
+	register_block_type(__DIR__ . '/build/blocks/block-slide');
 }
 
 add_action('init', 'create_block_spawn_blocks_block_init');
