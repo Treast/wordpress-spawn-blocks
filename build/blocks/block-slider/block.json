@@ -6,6 +6,24 @@
   "title": "Slider",
   "category": "spawn",
   "description": "Slider block",
+  "attributes": {
+    "slidesPerView": {
+      "type": "integer",
+      "default": 3
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplayDuration": {
+      "type": "integer",
+      "default": 3000
+    }
+  },
   "supports": {
     "html": false
   },

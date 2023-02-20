@@ -10365,8 +10365,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/.pnpm/swiper@9.0.5/node_modules/swiper/swiper.esm.js");
 
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
-    slidesPerView: 3
+  const sliders = document.querySelectorAll(".swiper");
+  sliders.forEach(slider => {
+    const modules = [];
+    const loop = slider.dataset.loop == "true" || true;
+    const slidesPerView = parseInt(slider.dataset.slidesperview) || 3;
+    const autoplay = slider.dataset.autoplay == "true" ? {
+      delay: parseInt(slider.dataset.autoplayduration) || 3000
+    } : false;
+    if (autoplay) modules.push(swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay);
+    new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+      loop,
+      slidesPerView,
+      autoplay,
+      modules
+    });
   });
 });
 }();
